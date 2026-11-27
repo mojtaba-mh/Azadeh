@@ -19,7 +19,7 @@ app = FastAPI(title="Integrated News, Auth and Staff API")
 # تنظیمات CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -87,7 +87,7 @@ MOCK_NEWS_DB = [
         "date": "2024-03-20T10:00:00",
         "category": "EVENT",
         "photo": [
-            {"id": 1, "src": "sports-Hall.jpg", "alt": "مراسم افتتاحیه"}
+            {"id": 1, "src": "sports-Hall.webp", "alt": "مراسم افتتاحیه"}
         ],
         "status": "published",
         "summary": "مراسم افتتاحیه سال جدید."
@@ -101,7 +101,7 @@ MOCK_NEWS_DB = [
         "author": "واحد مشاوره",
         "category": "EVENT",
         "photo": [
-            {"id": 1, "src": "smartClass.jpg", "alt": "مراسم افتتاحیه"}
+            {"id": 1, "src": "smartClass.webp", "alt": "مراسم افتتاحیه"}
         ],
         "status": "published",
         "location": "بهبهان",
@@ -115,7 +115,7 @@ MOCK_NEWS_DB = [
         "author": "معاونت آموزشی",
         "category": "ACHIEVEMENT",
         "photo": [
-            {"id": 1, "src": "schoolyard.jpg", "alt": "مراسم افتتاحیه"}
+            {"id": 1, "src": "schoolyard.webp", "alt": "مراسم افتتاحیه"}
         ],
         "status": "published",
         "location": "بهبهان",
@@ -124,7 +124,7 @@ MOCK_NEWS_DB = [
 ]
 
 IMAGE_DETAILS_DB = {
-    "niloFar-shahrui.png": {
+    "niloFar-shahrui.webp": {
         "name": "نیلوفر شهروئی",
         "role": "COUNSELOR",
         "aboutMe": [
@@ -142,7 +142,7 @@ IMAGE_DETAILS_DB = {
         "joinDate": "2023-01-01T00:00:00",
         "status": "active"
     },
-    "sima-beh.png": {
+    "sima-beh.webp": {
         "name": "سیما بهبهانی",
         "role": "TEACHER_4",
         "aboutMe": [
@@ -167,7 +167,7 @@ IMAGE_DETAILS_DB = {
         "joinDate": "2023-01-01T00:00:00",
         "status": "active"
     },
-    "zohre-bironiha.png": {
+    "zohre-bironiha.webp": {
         "name": "زهره بیرونیها",
         "role": "TEACHER_1",
         "aboutMe": [
